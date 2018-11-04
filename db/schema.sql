@@ -22,4 +22,4 @@ CREATE TABLE burgers
   INSERT INTO burgers (burger_name,devoured)
   VALUES ('Veggie Burger',false);
 
-
+-- INSERT INTO t1 VALUES (NOW());

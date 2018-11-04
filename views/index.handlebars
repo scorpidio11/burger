@@ -1,58 +1,68 @@
 {{!-- <p>You are connected to Server!</p> --}}
 
-<div class="container">
-    <div class="row">
-        <div class="col-xs-12 text-center" id="top-bar">
-            <h1>Eat DA Burger</h1>
-        </div>
-        <div class="col-xs-6 text-center" class="task">
-            <div class="row">
 
-                {{#each burger_data}}
-                {{#unless this.devoured}}
+<div class="row">
+    {{!--
+    <h1>Eat DA Burger</h1> --}}
 
-                <div class="col-xs-9 text-center">
-                    <pre> {{this.id}}. {{this.burger_name}}</pre>
-                </div>
+    <div class="col-md-12  text-center" class="task">
+          <div class="row cen">
 
-                <div class="col-xs-3 text-center">
-                    <form method="POST" action="/burgers/update?_method=PUT" class="button-size">
-                        <input type="hidden" name="burger_id" type="text" value={{this.id}}>
-                        <br>
-                        <button type="submit" class="btn btn-default">
-                            Devour It!
-                        </button>
+            {{#each burger_data}}
+            {{#unless this.devoured}}
 
-                    </form>
+            <div class="col-md-12 text-center">
+              <h3> {{this.id}}. {{this.burger_name}} </h3> 
+            </div>
 
-                    <div>
-                        {{/unless}}
-                        {{/each}}
-                    </div>
-                </div>
+</div>
+<div class="row cen">
 
+            <div class="col-md-12 text-center">
+                <form method="POST" action="/burgers/update?_method=PUT" class="button-size">
+                    <input type="hidden" name="burger_id" type="text" value={{this.id}}>
+                    <br>
+                    <button type="submit" class="burgerEaten btn-lg">
+                        Devour It!
+                    </button>
 
-                <div class="col-xs-6 text-center" class="task">
-                    {{#each burger_data}}
-                    {{#if this.devoured}}
-                    <input class="form-control" type="text" placeholder="{{this.id}}. {{this.burger_name}}" readonly>
-                    {{/if}}
+                </form>
+
+                <div>
+                    {{/unless}}
                     {{/each}}
-
                 </div>
             </div>
-        </div>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 text-center enter_section">
 
-                    <form action="/burgers/create" method="POST">
-                        <input type="text" name="burger_name" class="form-control" value="" id="enter_text">
-                        <button type="submit" class="btn btn-primary" id="text-enter-button">SUBMIT</button>
+            <div class="col-md-12 text-center" class="task burgerEaten">
+                {{#each burger_data}}
+                {{#if this.devoured}}
+                <input class="form-control" type="text" placeholder="{{this.id}}. {{this.burger_name}}" readonly>
+                {{/if}}
+                {{/each}}
 
-                    </form>
-                    <p>Enter in a burger you would like to eat!</p>
-                </div>
             </div>
+
+
+
         </div>
+    </div>
+
+
+  
+
+</div>
+
+
+  <div class="row cen foot">
+        <div class="col-md-12 text-center">
+            <h3>Enter in a burger you would like to eat!</h3>
+            <form action="/burgers/create" method="POST">
+                <input type="text" name="burger_name" class="form-control" value="" id="enter_text">
+                <button type="submit" class="addBurgerButton" id="text-enter-button">SUBMIT</button>
+
+            </form>
+
+        </div>
+    </div>

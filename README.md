@@ -5,7 +5,7 @@ Application with MySQL, Node, Express, Handlebars, ORM and MVC design pattern. I
 
 
 # Technologies / Format Used
-- MVC design Pattern
+- MVC Design Pattern
 - HTML
 - CSS
 - Javascript

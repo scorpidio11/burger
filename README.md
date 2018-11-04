@@ -1,6 +1,4 @@
-# burger
-
-A Burger Eatin' Application With Node.js/Express/MySQL/Handlebars
+# Eat Da Burger
 
 
 Application with MySQL, Node, Express, Handlebars, ORM and MVC design pattern. I used Node and MySQL to query and route data in the app, and Handlebars to generate HTML.

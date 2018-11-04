@@ -6,14 +6,13 @@ A Burger Eatin' Application With Node.js/Express/MySQL/Handlebars/Materialize
 Application with MySQL, Node, Express, Handlebars, ORM and MVC design pattern. I used Node and MySQL to query and route data in the app, and Handlebars to generate HTML.
 
 
-# Technologies Used
-
+# Technologies / Format Used
+- MVC design Pattern
 - HTML
 - CSS
 - Javascript
 - Express
 - Node
-- JSON
 - MySQL
 - ORM
 - Handlebars
@@ -31,7 +30,7 @@ Application with MySQL, Node, Express, Handlebars, ORM and MVC design pattern. I
 │   └── orm.js
 │ 
 ├── controllers
-│   └── burgers_controller.js
+│   └── routes.js
 │
 ├── db
 │   ├── schema.sql
@@ -47,7 +46,7 @@ Application with MySQL, Node, Express, Handlebars, ORM and MVC design pattern. I
 ├── public
 │   └── assets
 │       ├── css
-│       │   └── burger_style.css
+│       │   └── style.css
 │       └── img
 │           └── burger.png
 │   

@@ -8,6 +8,7 @@ CREATE TABLE burgers
   id INT NOT NULL AUTO_INCREMENT,
   burger_name VARCHAR(100) NOT NULL,
   devoured BOOLEAN DEFAULT false,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY(id)
 );
 
@@ -21,4 +22,4 @@ CREATE TABLE burgers
   INSERT INTO burgers (burger_name,devoured)
   VALUES ('Veggie Burger',false);
 
-   
+

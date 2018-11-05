@@ -2,9 +2,11 @@
 
 
 Application with MySQL, Node, Express, Handlebars, ORM and MVC design pattern. I used Node and MySQL to query and route data in the app, and Handlebars to generate HTML.
+Sites's front and back end (data base) are both hosted on Heroku.
 
 
 # Technologies / Format Used
+
 - MVC Design Pattern
 - HTML
 - CSS
@@ -57,3 +59,7 @@ Application with MySQL, Node, Express, Handlebars, ORM and MVC design pattern. I
         └── main.handlebars
         
         	```
+
+
+# Heroku Link
+https://radiant-ridge-37950.herokuapp.com/
